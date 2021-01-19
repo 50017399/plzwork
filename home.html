@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.belfastmet.ac.uk/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+	 <header>
+		<div id="logo">VR_Y_HYPER</div>
+		<nav>  
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			  <li><a href="page1.html">Virtual Reality&nbsp;</a></li>
+			  <li><a href="page2.html">WebXR&nbsp;</a></li>
+			  <li><a href="page3.html">About Us&nbsp;</a></li>
+				<li> <a href="page4.html">The Team&nbsp;</a></li>
+			<li> <a href="page5.html">Contact Us&nbsp;</a></li>
+				
+		  </ul>
+		</nav>
+	</header>
+	
+	
+		
+			<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+	  <a href="page1.html"> <img src="Vr.jpg" alt="VR" style="width:100%"> </a>
+    <div class="text">VR</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+	  <a href="page3.html"><img src="WebXR.jpg" alt="WebXR" style="width:100%"> </a>
+    <div class="text">WebXR</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+	  <a href="page5.html"><img src="ContactInfo.jpg" alt="Contact Info" style="width:100%"> </a>
+	  <div class="text"> <p style="color: black">Contact Information </p> </div>
+  </div>
+<div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+	<a href="page4.html"> <img src="Team.jpg" alt="team" style="width:100%"> </a>
+    <div class="text">Meet the team</div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+	</script>
+			<body>
+			<article>
+				<h2>Welcome&nbsp;</h2>
+				<p>hello and welcome we are VR_Y_Hyper Why not look around our web page and find out information on us and learn about why your comany should join the VR craze today.&nbsp;</p>
+			</article>
+			</body>
+	<footer>
+	  <p>&copy; Belfast Met <a href="https://www.belfastmet.ac.uk/" target="_blank" rel="nofollow">HTML5 Template</a></p>
+		
+	</footer>
+
+</html>
